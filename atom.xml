@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Vishwath Mohan]]></title>
   <link href="http://bridgeburner.github.io/atom.xml" rel="self"/>
   <link href="http://bridgeburner.github.io/"/>
-  <updated>2013-04-25T02:36:03-05:00</updated>
+  <updated>2013-04-26T02:01:19-05:00</updated>
   <id>http://bridgeburner.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Vishwath Mohan]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
