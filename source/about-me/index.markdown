@@ -7,17 +7,24 @@ sharing: true
 footer: true
 ---
 
+{% img right ../images/me.jpg 200 200 %}
+
 I'm a PhD candidate at the University of Texas at Dallas, working with
-my advisor Dr. Kevin W. Hamlen in the field of computer security. My
-research focuses mostly on malware obfuscation, malware detection and
-automated program rewriting. Some of that research has been featured
-in the Economist, New Scientist, Wired and NBC News. I'm also
-interested in artificial intelligence, philosophy, neuroscience, and
-procrastinating (usually by playing on the guitar).
+my advisor [Dr. Kevin W. Hamlen](www.utdallas.edu/~hamlen) in the
+field of computer security. My research focuses mostly on malware
+obfuscation, malware detection and automated program rewriting. Some
+of that research has been featured in the
+[Economist](http://www.economist.com/node/21560839),
+[New Scientist](http://www.newscientist.com/article/mg21528785.600-frankenstein-virus-creates-malware-by-pilfering-code.html),
+[Wired](http://www.wired.co.uk/news/archive/2012-08/21/frankenstein-virus)
+and
+[NBC News](http://www.nbcnews.com/technology/technolog/frankenstein-virus-could-assemble-itself-app-snippets-959004). I'm
+also interested in artificial intelligence, philosophy, neuroscience,
+and procrastinating (usually by playing on the guitar). You'll find a
+smattering of these and other topics on my [blog here]({{ root_url }}/index.html).
 
 A list of some projects I've been working on and their associated
-publications are listed below. You can also find my (soon-to-be at
-this point) [blog here]({{ root_url }}/index.html).
+publications are listed below.
 
 
 ### Projects
@@ -89,3 +96,6 @@ though.*
 5. Exploiting an Antivirus Interface. Computer Standards & Interfaces
    Journal, 31(6):1182-1189, April 2009. Kevin W. Hamlen, Vishwath
    Mohan, Mohammad M. Masud, Latifur Khan, and Bhavani Thuraisingham.
+
+
+### About this blog
