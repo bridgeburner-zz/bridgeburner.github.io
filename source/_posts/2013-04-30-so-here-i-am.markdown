@@ -13,6 +13,8 @@ are so many good reasons for me to maintain one there was no point in
 delaying it any longer. It seemed natural to begin by listing the top
 3 things I'm expecting blogging will help me with.
 
+<!-- more -->
+
 #### 1. Complete what I begin
 
 Often, when I'm working on a new project, I'm sorely tempted to go

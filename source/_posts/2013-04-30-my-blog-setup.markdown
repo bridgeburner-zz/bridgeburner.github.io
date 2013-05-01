@@ -18,6 +18,7 @@ incomplete projects on my hands.
 Naturally, picking a blog engine to use was no exception. I used a
 small checklist of features for comparison as I looked around. Here
 they are in no particular order -
+<!-- more -->
 
 * As a programmer I was looking for something that didn't deviate too
   far from a coding workflow (which is a fancy way of saying "me want
