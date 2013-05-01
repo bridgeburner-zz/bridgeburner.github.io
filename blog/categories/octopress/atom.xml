@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Vishwath Mohan]]></title>
+  <link href="http://bridgeburner.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://bridgeburner.github.io/"/>
+  <updated>2013-04-30T23:28:42-05:00</updated>
+  <id>http://bridgeburner.github.io/</id>
+  <author>
+    <name><![CDATA[Vishwath Mohan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Blog Setup]]></title>
+    <link href="http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup/"/>
+    <updated>2013-04-30T23:36:00-05:00</updated>
+    <id>http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup</id>
+    <content type="html"><![CDATA[<p>I'm obsessive to a fault when it comes to researching the right tool
+for a job. I could (and do) spend days sifting through article
+after article comparing different languages, libraries, programming
+paradigms, every little thing you could imagine every time I start a
+new project. It's actually one of the reasons I have so many
+incomplete projects on my hands.</p>
+
+<h3>The Search</h3>
+
+<p>Naturally, picking a blog engine to use was no exception. I used a
+small checklist of features for comparison as I looked around. Here
+they are in no particular order -</p>
+
+<ul>
+<li><p>As a programmer I was looking for something that didn't deviate too
+far from a coding workflow (which is a fancy way of saying "me want
+emacs").</p></li>
+<li><p>As a security researcher I obviously prefered a solution that was as
+secure as possible.</p></li>
+<li><p>As a lazy person, I wanted something that would be both functional
+and aesthetically sensible out of the box (or with minimal setup).</p></li>
+<li><p>I didn't need an overwhelming set of features, so simplicity (both
+of use and design) was preferable.</p></li>
+<li><p>I wanted to be able to go under the hood to make my own
+customizations if I wanted to. But more than that, I wanted to be
+able to look at the source and really understand what was going
+on. This is obviously harder that larger the code base gets, and so
+is somewhat related to the previous point. It's also related to the
+next two points.</p></li>
+<li><p>If it catered to my irrational dislike and ignorance of PHP, then
+all the better (I really need to sit down and go beyond the hello
+world stuff with PHP at some point. Hopefully that point is very,
+very far away).</p></li>
+<li><p>If it catered to my irrational (it's not irrational really, I only
+say this out of a sense of fairness to the point above) love and
+appreciation of Python, Ruby, or Lisp then all the better.</p></li>
+</ul>
+
+
+<h3>Octopress is awesome</h3>
+
+<p>I picked <a href="https://github.com/mojombo/jekyll">Jekyll</a> initially, which
+is more blog generator than blog engine. It takes a configuration
+file, your posts and pages written in markdown and uses them to
+generate (people also call it baking) an almost entirely static blog.</p>
+
+<p>Eventually though, I settled with
+<a href="http://octopress.org/">Octopress</a>---an extra layer over Jeyll that
+manages to add just enough to hit that sweet spot between features and
+ease of use. It integrates easily with Twitter, Google Analytics and
+other useful services, it also integrates with comment systems like
+Disqus (which to be fair, Jekyll does too), and has options to easily
+deploy to <a href="http://pages.github.com/">Github Pages</a>,
+<a href="https://www.heroku.com/">Heroku</a> or any rsync enabled hosting
+service. I really like how well Octopress manages to cover every
+single point in my checklist -</p>
+
+<ol>
+<li><p>Octopress allows me to write my posts locally using my editor of
+choice (*<em>cough</em>*Emacs*<em>cough</em>*), and makes it trivial to save,
+generate and deploy the generated site.</p></li>
+<li><p>Jekyll (and consequently Octopress) uses git to manage both the
+markdown source and the generated site, making it easy to work
+across mulitple machines and still keep things synchronized.</p></li>
+<li><p>You can't get more secure than an entirely (almost) static
+site. Well, technically you could not have a site at all and be
+more secure. But practically, a baked blog is about as exploit free
+as you could get.</p></li>
+<li><p>Assuming you have Git and Ruby installed on your machine already,
+you can have a blog up and running in literally a few minutes. The
+Octopress site does a great job of explaining how to <a href="http://octopress.org/docs/setup/">install and
+configure</a> it to your liking.</p>
+
+<p>I switched my theme to
+<a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/">Fabric</a>---which
+I'm using as is simply because of how much I love it---but it
+wasn't because of any shortcomings with the default theme, which
+looks just great.</p></li>
+<li><p>The source for both Jekyll and Octopress is simple, well-written,
+and easy to read. It certainly doesn't hurt that they're both
+implemented in Ruby.</p></li>
+</ol>
+
+
+<p>I'm currently hosting the blog on Github Pages, which seemed like a
+good starting point. I don't have comments enabled at the moment,
+which might seem like a controversial choice. I happened to read through
+<a href="http://mattgemmell.com/">Matt Gemmel's</a> excellent chronicling of his
+decision to disable comments recently, (you can read his first post on it
+<a href="http://mattgemmell.com/2011/11/29/comments-off/">here</a>, and the
+bottom of that page contains links to his follow-ups) and agree more
+or less with what he has to say.</p>
+
+<p>As it stands I don't really expect a vast readership, but if you have
+something to say about anything I post, I'd be glad for you to give me
+a shout out on <a href="https://twitter.com/vishwath">Twitter</a> or by
+<a href="mailto:vishwath.mohan@gmail.com">mail</a>, both of which seem like more
+natural mediums to carry out a discussion.</p>
+]]></content>
+  </entry>
+  
+</feed>

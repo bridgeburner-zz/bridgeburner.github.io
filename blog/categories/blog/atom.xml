@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Vishwath Mohan]]></title>
-  <link href="http://bridgeburner.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: blog | Vishwath Mohan]]></title>
+  <link href="http://bridgeburner.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://bridgeburner.github.io/"/>
   <updated>2013-04-30T23:28:42-05:00</updated>
   <id>http://bridgeburner.github.io/</id>
@@ -18,11 +18,11 @@
     <link href="http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup/"/>
     <updated>2013-04-30T23:36:00-05:00</updated>
     <id>http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup</id>
-    <content type="html"><![CDATA[<p>I&#8217;m obsessive to a fault when it comes to researching the right tool
+    <content type="html"><![CDATA[<p>I'm obsessive to a fault when it comes to researching the right tool
 for a job. I could (and do) spend days sifting through article
 after article comparing different languages, libraries, programming
 paradigms, every little thing you could imagine every time I start a
-new project. It&#8217;s actually one of the reasons I have so many
+new project. It's actually one of the reasons I have so many
 incomplete projects on my hands.</p>
 
 <h3>The Search</h3>
@@ -32,26 +32,26 @@ small checklist of features for comparison as I looked around. Here
 they are in no particular order -</p>
 
 <ul>
-<li><p>As a programmer I was looking for something that didn&#8217;t deviate too
-far from a coding workflow (which is a fancy way of saying &#8220;me want
-emacs&#8221;).</p></li>
+<li><p>As a programmer I was looking for something that didn't deviate too
+far from a coding workflow (which is a fancy way of saying "me want
+emacs").</p></li>
 <li><p>As a security researcher I obviously prefered a solution that was as
 secure as possible.</p></li>
 <li><p>As a lazy person, I wanted something that would be both functional
 and aesthetically sensible out of the box (or with minimal setup).</p></li>
-<li><p>I didn&#8217;t need an overwhelming set of features, so simplicity (both
+<li><p>I didn't need an overwhelming set of features, so simplicity (both
 of use and design) was preferable.</p></li>
 <li><p>I wanted to be able to go under the hood to make my own
 customizations if I wanted to. But more than that, I wanted to be
 able to look at the source and really understand what was going
 on. This is obviously harder that larger the code base gets, and so
-is somewhat related to the previous point. It&#8217;s also related to the
+is somewhat related to the previous point. It's also related to the
 next two points.</p></li>
 <li><p>If it catered to my irrational dislike and ignorance of PHP, then
 all the better (I really need to sit down and go beyond the hello
 world stuff with PHP at some point. Hopefully that point is very,
 very far away).</p></li>
-<li><p>If it catered to my irrational (it&#8217;s not irrational really, I only
+<li><p>If it catered to my irrational (it's not irrational really, I only
 say this out of a sense of fairness to the point above) love and
 appreciation of Python, Ruby, or Lisp then all the better.</p></li>
 </ul>
@@ -65,7 +65,7 @@ file, your posts and pages written in markdown and uses them to
 generate (people also call it baking) an almost entirely static blog.</p>
 
 <p>Eventually though, I settled with
-<a href="http://octopress.org/">Octopress</a>&#8212;an extra layer over Jeyll that
+<a href="http://octopress.org/">Octopress</a>---an extra layer over Jeyll that
 manages to add just enough to hit that sweet spot between features and
 ease of use. It integrates easily with Twitter, Google Analytics and
 other useful services, it also integrates with comment systems like
@@ -82,7 +82,7 @@ generate and deploy the generated site.</p></li>
 <li><p>Jekyll (and consequently Octopress) uses git to manage both the
 markdown source and the generated site, making it easy to work
 across mulitple machines and still keep things synchronized.</p></li>
-<li><p>You can&#8217;t get more secure than an entirely (almost) static
+<li><p>You can't get more secure than an entirely (almost) static
 site. Well, technically you could not have a site at all and be
 more secure. But practically, a baked blog is about as exploit free
 as you could get.</p></li>
@@ -92,27 +92,27 @@ Octopress site does a great job of explaining how to <a href="http://octopress.o
 configure</a> it to your liking.</p>
 
 <p>I switched my theme to
-<a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/">Fabric</a>&#8212;which
-I&#8217;m using as is simply because of how much I love it&#8212;but it
-wasn&#8217;t because of any shortcomings with the default theme, which
+<a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/">Fabric</a>---which
+I'm using as is simply because of how much I love it---but it
+wasn't because of any shortcomings with the default theme, which
 looks just great.</p></li>
 <li><p>The source for both Jekyll and Octopress is simple, well-written,
-and easy to read. It certainly doesn&#8217;t hurt that they&#8217;re both
+and easy to read. It certainly doesn't hurt that they're both
 implemented in Ruby.</p></li>
 </ol>
 
 
-<p>I&#8217;m currently hosting the blog on Github Pages, which seemed like a
-good starting point. I don&#8217;t have comments enabled at the moment,
+<p>I'm currently hosting the blog on Github Pages, which seemed like a
+good starting point. I don't have comments enabled at the moment,
 which might seem like a controversial choice. I happened to read through
-<a href="http://mattgemmell.com/">Matt Gemmel&#8217;s</a> excellent chronicling of his
+<a href="http://mattgemmell.com/">Matt Gemmel's</a> excellent chronicling of his
 decision to disable comments recently, (you can read his first post on it
 <a href="http://mattgemmell.com/2011/11/29/comments-off/">here</a>, and the
 bottom of that page contains links to his follow-ups) and agree more
 or less with what he has to say.</p>
 
-<p>As it stands I don&#8217;t really expect a vast readership, but if you have
-something to say about anything I post, I&#8217;d be glad for you to give me
+<p>As it stands I don't really expect a vast readership, but if you have
+something to say about anything I post, I'd be glad for you to give me
 a shout out on <a href="https://twitter.com/vishwath">Twitter</a> or by
 <a href="mailto:vishwath.mohan@gmail.com">mail</a>, both of which seem like more
 natural mediums to carry out a discussion.</p>
@@ -124,46 +124,46 @@ natural mediums to carry out a discussion.</p>
     <link href="http://bridgeburner.github.io/blog/2013/04/30/so-here-i-am/"/>
     <updated>2013-04-30T21:00:00-05:00</updated>
     <id>http://bridgeburner.github.io/blog/2013/04/30/so-here-i-am</id>
-    <content type="html"><![CDATA[<p>I&#8217;ve been meaning to blog for some time now, having a vague sense that
+    <content type="html"><![CDATA[<p>I've been meaning to blog for some time now, having a vague sense that
 it would be beneficial but never really sitting down to examine it
 more closely. I did just that today though, and realized that there
 are so many good reasons for me to maintain one there was no point in
 delaying it any longer. It seemed natural to begin by listing the top
-3 things I&#8217;m expecting blogging will help me with.</p>
+3 things I'm expecting blogging will help me with.</p>
 
 <h4>1. Complete what I begin</h4>
 
-<p>Often, when I&#8217;m working on a new project, I&#8217;m sorely tempted to go
-online in an attempt to better educate myself about what&#8217;s already
-been done. A few hours and many links later, I&#8217;ve found something else
+<p>Often, when I'm working on a new project, I'm sorely tempted to go
+online in an attempt to better educate myself about what's already
+been done. A few hours and many links later, I've found something else
 that interests me so much that I drop what I was working on to attempt
 that instead.</p>
 
-<p>In some ways its a consequence of an entirely good thing&#8212;a sense of
+<p>In some ways its a consequence of an entirely good thing---a sense of
 fascination for the things I encounter. What I really need is
-something to force my attention back to what I&#8217;ve started so I can see
+something to force my attention back to what I've started so I can see
 them through to completion. Writing publicly about each new thing I
-begin will go a long way towards that (that&#8217;s the hope at any rate).</p>
+begin will go a long way towards that (that's the hope at any rate).</p>
 
 <h4>2. Remember what I read</h4>
 
-<p>I suffer from a mild case of information addiction. Now I don&#8217;t
-feel the compulsive need to check social networks or email. I&#8217;m even
+<p>I suffer from a mild case of information addiction. Now I don't
+feel the compulsive need to check social networks or email. I'm even
 fairly sure that my Facebook login frequency is firmly in the
 offend-my-friends zone. My information drug of choice happens to be
-rss feeds (Quora comes a close second), and I&#8217;ve found that I can spend
+rss feeds (Quora comes a close second), and I've found that I can spend
 the entire day skipping from one fascinating article to the next.</p>
 
-<p>This wouldn&#8217;t be so bad if I didn&#8217;t have an entirely lousy memory.
+<p>This wouldn't be so bad if I didn't have an entirely lousy memory.
 Currently, I forget a lot of what I come across and am little better
 off than not having read it at all. I might even be worse off for any
 induced
 <a href="http://psychcentral.com/blog/archives/2013/01/21/overcoming-information-overload/">cognitive overload</a>.</p>
 
-<p>I&#8217;ve decided that the best way to make this work for me is to attempt
+<p>I've decided that the best way to make this work for me is to attempt
 writing about (even a fraction of) the things I read. Writing is a
 useful device to improve both retention and recall, and although
-typing isn&#8217;t quite as effective as putting
+typing isn't quite as effective as putting
 <a href="http://online.wsj.com/article/SB10001424052748704631504575531932754922518.html">pen to paper</a>,
 its sure to help me remember more of what I read. More importantly,
 forcing my ideas onto (virtual) paper will afford me the opportunity
@@ -186,10 +186,10 @@ opinions.</li>
 
 
 <p>Individually, each of these traits are immensely beneficial. Together,
-they transform you into a better, wiser person. And who wouldn&#8217;t want
+they transform you into a better, wiser person. And who wouldn't want
 that?</p>
 
-<p>So&#8230;here I am!</p>
+<p>So...here I am!</p>
 ]]></content>
   </entry>
   
