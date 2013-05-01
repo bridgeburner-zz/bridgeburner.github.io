@@ -99,3 +99,12 @@ though.*
 
 
 ### About this blog
+
+I'm using Brandon Mathis' excellent [Octopress](https://octopress.org)
+framework for the blog, with the unaltered version of the
+[Fabric](http://panks.me/blog/2013/01/new-octopress-theme-fabric/)
+theme in lieu of Octopress's default. The blog is hosted on
+[Github Pages](https://pages.github.com). If you're interested, you
+can also read a slightly more in depth
+[explanation]({% post_url 2013-04-30-my-blog-setup %})
+of my blog setup and why I chose it.
