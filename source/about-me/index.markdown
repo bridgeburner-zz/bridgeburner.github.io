@@ -73,29 +73,30 @@ though.*
 
 ### Publications
 
-1. Securing Untrusted Code via Compiler-Agnostic Binary Rewriting. In
-   Proceedings of the 28th Annual Computer Security Applications
+1. [Securing Untrusted Code via Compiler-Agnostic Binary Rewriting.]({{root_url}}/assets/reins_acsac.pdf)
+   In Proceedings of the 28th Annual Computer Security Applications
    Conference (ACSAC), December 2012. Richard Wartell, Vishwath Mohan,
    Kevin W. Hamlen, and Zhiqiang Lin. *Awarded best student paper*
 
-2. Binary Stirring: Self-randomizing Instruction Addresses of Legacy
-   x86 Binary Code. In Proceedings of the 19th ACM Conference on
-   Computer and Communications Security (CCS), October 2012. Richard
-   Wartell, Vishwath Mohan, Kevin W. Hamlen, and Zhiqiang Lin. *NYU
-   Poly AT&T Best Applied Security Paper 2012 Runners-up*
+2. [Binary Stirring: Self-randomizing Instruction Addresses of Legacy x86 Binary Code.]({{root_url}}/assets/stir_ccs.pdf)
+   In Proceedings of the 19th ACM Conference on Computer and
+   Communications Security (CCS), October 2012. Richard Wartell,
+   Vishwath Mohan, Kevin W. Hamlen, and Zhiqiang Lin. *NYU Poly AT&T
+   Best Applied Security Paper 2012 Runners-up*
 
-3. Frankenstein: Stitching Malware from Benign Binaries. In
-   Proceedings of the 6th USENIX Workshop on Offensive Technologies
+3. [Frankenstein: Stitching Malware from Benign Binaries.]({{root_url}}/assets/frankenstein_woot.pdf)
+   In Proceedings of the 6th USENIX Workshop on Offensive Technologies
    (WOOT), August 2012. Vishwath Mohan and Kevin W. Hamlen.
 
-4. Reining In Windows API Abuses with In-lined Reference
-   Monitors. Technical Report UTDCS-18-10, Computer Science
-   Department, The University of Texas at Dallas, Richardson, Texas,
-   June 2010. Kevin W. Hamlen, Vishwath Mohan, and Richard Wartell.
+4. [Reining In Windows API Abuses with In-lined Reference Monitors.]({{root_url}}/assets/reins_tech_report.pdf)
+   Technical Report UTDCS-18-10, Computer Science Department, The
+   University of Texas at Dallas, Richardson, Texas, June 2010. Kevin
+   W. Hamlen, Vishwath Mohan, and Richard Wartell.
 
-5. Exploiting an Antivirus Interface. Computer Standards & Interfaces
-   Journal, 31(6):1182-1189, April 2009. Kevin W. Hamlen, Vishwath
-   Mohan, Mohammad M. Masud, Latifur Khan, and Bhavani Thuraisingham.
+5. [Exploiting an Antivirus Interface.]({{root_url}}/assets/av_interface.pdf)
+   Computer Standards & Interfaces Journal, 31(6):1182-1189,
+   April 2009. Kevin W. Hamlen, Vishwath Mohan, Mohammad M. Masud,
+   Latifur Khan, and Bhavani Thuraisingham.
 
 
 ### About this blog
