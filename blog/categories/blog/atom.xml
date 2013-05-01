@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blog | Vishwath Mohan]]></title>
-  <link href="http://bridgeburner.github.io/blog/categories/blog/atom.xml" rel="self"/>
-  <link href="http://bridgeburner.github.io/"/>
-  <updated>2013-04-30T23:33:22-05:00</updated>
-  <id>http://bridgeburner.github.io/</id>
+  <link href="http://vishwathmohan.com/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://vishwathmohan.com/"/>
+  <updated>2013-05-01T00:04:23-05:00</updated>
+  <id>http://vishwathmohan.com/</id>
   <author>
     <name><![CDATA[Vishwath Mohan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Blog Setup]]></title>
-    <link href="http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup/"/>
+    <link href="http://vishwathmohan.com/blog/2013/04/30/my-blog-setup/"/>
     <updated>2013-04-30T23:36:00-05:00</updated>
-    <id>http://bridgeburner.github.io/blog/2013/04/30/my-blog-setup</id>
+    <id>http://vishwathmohan.com/blog/2013/04/30/my-blog-setup</id>
     <content type="html"><![CDATA[<p>I'm obsessive to a fault when it comes to researching the right tool
 for a job. I could (and do) spend days sifting through article
 after article comparing different languages, libraries, programming
@@ -124,9 +124,9 @@ natural mediums to carry out a discussion.</p>
   
   <entry>
     <title type="html"><![CDATA[Here I am]]></title>
-    <link href="http://bridgeburner.github.io/blog/2013/04/30/so-here-i-am/"/>
+    <link href="http://vishwathmohan.com/blog/2013/04/30/so-here-i-am/"/>
     <updated>2013-04-30T21:00:00-05:00</updated>
-    <id>http://bridgeburner.github.io/blog/2013/04/30/so-here-i-am</id>
+    <id>http://vishwathmohan.com/blog/2013/04/30/so-here-i-am</id>
     <content type="html"><![CDATA[<p>I've been meaning to blog for some time now, having a vague sense that
 it would be beneficial but never really sitting down to examine it
 more closely. I did just that today though, and realized that there

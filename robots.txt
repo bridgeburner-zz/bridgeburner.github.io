@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://bridgeburner.github.io/sitemap.xml 
+Sitemap: http://vishwathmohan.com/sitemap.xml 
