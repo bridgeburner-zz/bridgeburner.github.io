@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Vishwath Mohan]]></title>
   <link href="http://bridgeburner.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://bridgeburner.github.io/"/>
-  <updated>2013-04-30T23:28:42-05:00</updated>
+  <updated>2013-04-30T23:33:22-05:00</updated>
   <id>http://bridgeburner.github.io/</id>
   <author>
     <name><![CDATA[Vishwath Mohan]]></name>
@@ -30,6 +30,9 @@ incomplete projects on my hands.</p>
 <p>Naturally, picking a blog engine to use was no exception. I used a
 small checklist of features for comparison as I looked around. Here
 they are in no particular order -</p>
+
+<!-- more -->
+
 
 <ul>
 <li><p>As a programmer I was looking for something that didn't deviate too

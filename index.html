@@ -136,94 +136,9 @@ incomplete projects on my hands.</p>
 small checklist of features for comparison as I looked around. Here
 they are in no particular order -</p>
 
-<ul>
-<li><p>As a programmer I was looking for something that didn&#8217;t deviate too
-far from a coding workflow (which is a fancy way of saying &#8220;me want
-emacs&#8221;).</p></li>
-<li><p>As a security researcher I obviously prefered a solution that was as
-secure as possible.</p></li>
-<li><p>As a lazy person, I wanted something that would be both functional
-and aesthetically sensible out of the box (or with minimal setup).</p></li>
-<li><p>I didn&#8217;t need an overwhelming set of features, so simplicity (both
-of use and design) was preferable.</p></li>
-<li><p>I wanted to be able to go under the hood to make my own
-customizations if I wanted to. But more than that, I wanted to be
-able to look at the source and really understand what was going
-on. This is obviously harder that larger the code base gets, and so
-is somewhat related to the previous point. It&#8217;s also related to the
-next two points.</p></li>
-<li><p>If it catered to my irrational dislike and ignorance of PHP, then
-all the better (I really need to sit down and go beyond the hello
-world stuff with PHP at some point. Hopefully that point is very,
-very far away).</p></li>
-<li><p>If it catered to my irrational (it&#8217;s not irrational really, I only
-say this out of a sense of fairness to the point above) love and
-appreciation of Python, Ruby, or Lisp then all the better.</p></li>
-</ul>
-
-
-<h3>Octopress is awesome</h3>
-
-<p>I picked <a href="https://github.com/mojombo/jekyll">Jekyll</a> initially, which
-is more blog generator than blog engine. It takes a configuration
-file, your posts and pages written in markdown and uses them to
-generate (people also call it baking) an almost entirely static blog.</p>
-
-<p>Eventually though, I settled with
-<a href="http://octopress.org/">Octopress</a>&#8212;an extra layer over Jeyll that
-manages to add just enough to hit that sweet spot between features and
-ease of use. It integrates easily with Twitter, Google Analytics and
-other useful services, it also integrates with comment systems like
-Disqus (which to be fair, Jekyll does too), and has options to easily
-deploy to <a href="http://pages.github.com/">Github Pages</a>,
-<a href="https://www.heroku.com/">Heroku</a> or any rsync enabled hosting
-service. I really like how well Octopress manages to cover every
-single point in my checklist -</p>
-
-<ol>
-<li><p>Octopress allows me to write my posts locally using my editor of
-choice (*<em>cough</em>*Emacs*<em>cough</em>*), and makes it trivial to save,
-generate and deploy the generated site.</p></li>
-<li><p>Jekyll (and consequently Octopress) uses git to manage both the
-markdown source and the generated site, making it easy to work
-across mulitple machines and still keep things synchronized.</p></li>
-<li><p>You can&#8217;t get more secure than an entirely (almost) static
-site. Well, technically you could not have a site at all and be
-more secure. But practically, a baked blog is about as exploit free
-as you could get.</p></li>
-<li><p>Assuming you have Git and Ruby installed on your machine already,
-you can have a blog up and running in literally a few minutes. The
-Octopress site does a great job of explaining how to <a href="http://octopress.org/docs/setup/">install and
-configure</a> it to your liking.</p>
-
-<p>I switched my theme to
-<a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/">Fabric</a>&#8212;which
-I&#8217;m using as is simply because of how much I love it&#8212;but it
-wasn&#8217;t because of any shortcomings with the default theme, which
-looks just great.</p></li>
-<li><p>The source for both Jekyll and Octopress is simple, well-written,
-and easy to read. It certainly doesn&#8217;t hurt that they&#8217;re both
-implemented in Ruby.</p></li>
-</ol>
-
-
-<p>I&#8217;m currently hosting the blog on Github Pages, which seemed like a
-good starting point. I don&#8217;t have comments enabled at the moment,
-which might seem like a controversial choice. I happened to read through
-<a href="http://mattgemmell.com/">Matt Gemmel&#8217;s</a> excellent chronicling of his
-decision to disable comments recently, (you can read his first post on it
-<a href="http://mattgemmell.com/2011/11/29/comments-off/">here</a>, and the
-bottom of that page contains links to his follow-ups) and agree more
-or less with what he has to say.</p>
-
-<p>As it stands I don&#8217;t really expect a vast readership, but if you have
-something to say about anything I post, I&#8217;d be glad for you to give me
-a shout out on <a href="https://twitter.com/vishwath">Twitter</a> or by
-<a href="mailto:vishwath.mohan@gmail.com">mail</a>, both of which seem like more
-natural mediums to carry out a discussion.</p>
 
 		
-		
+		<a href="/blog/2013/04/30/my-blog-setup/" class="more-link">Read on</a>
 	</div>
 
 <div class="meta">
@@ -269,68 +184,9 @@ are so many good reasons for me to maintain one there was no point in
 delaying it any longer. It seemed natural to begin by listing the top
 3 things I&#8217;m expecting blogging will help me with.</p>
 
-<h4>1. Complete what I begin</h4>
-
-<p>Often, when I&#8217;m working on a new project, I&#8217;m sorely tempted to go
-online in an attempt to better educate myself about what&#8217;s already
-been done. A few hours and many links later, I&#8217;ve found something else
-that interests me so much that I drop what I was working on to attempt
-that instead.</p>
-
-<p>In some ways its a consequence of an entirely good thing&#8212;a sense of
-fascination for the things I encounter. What I really need is
-something to force my attention back to what I&#8217;ve started so I can see
-them through to completion. Writing publicly about each new thing I
-begin will go a long way towards that (that&#8217;s the hope at any rate).</p>
-
-<h4>2. Remember what I read</h4>
-
-<p>I suffer from a mild case of information addiction. Now I don&#8217;t
-feel the compulsive need to check social networks or email. I&#8217;m even
-fairly sure that my Facebook login frequency is firmly in the
-offend-my-friends zone. My information drug of choice happens to be
-rss feeds (Quora comes a close second), and I&#8217;ve found that I can spend
-the entire day skipping from one fascinating article to the next.</p>
-
-<p>This wouldn&#8217;t be so bad if I didn&#8217;t have an entirely lousy memory.
-Currently, I forget a lot of what I come across and am little better
-off than not having read it at all. I might even be worse off for any
-induced
-<a href="http://psychcentral.com/blog/archives/2013/01/21/overcoming-information-overload/">cognitive overload</a>.</p>
-
-<p>I&#8217;ve decided that the best way to make this work for me is to attempt
-writing about (even a fraction of) the things I read. Writing is a
-useful device to improve both retention and recall, and although
-typing isn&#8217;t quite as effective as putting
-<a href="http://online.wsj.com/article/SB10001424052748704631504575531932754922518.html">pen to paper</a>,
-its sure to help me remember more of what I read. More importantly,
-forcing my ideas onto (virtual) paper will afford me the opportunity
-to recognize connections between seemingly disparate ideas and place
-them into a larger, richer perspective of the world.</p>
-
-<h4>3. Improve as a person</h4>
-
-<p>Finally, writing in of itself is a great habit to cultivate. Leo
-Babuta has a great <a href="http://zenhabits.net/write-daily/">article</a> that
-explains the many good things that come from regular writing. The
-reasons that really resonated with me were the ability to -</p>
-
-<ol>
-<li>Think from the perspective of people around you.</li>
-<li>Improve the clarity and logical consistency of your thoughts and
-opinions.</li>
-<li>Reflect on your life and choices</li>
-</ol>
-
-
-<p>Individually, each of these traits are immensely beneficial. Together,
-they transform you into a better, wiser person. And who wouldn&#8217;t want
-that?</p>
-
-<p>So&#8230;here I am!</p>
 
 		
-		
+		<a href="/blog/2013/04/30/so-here-i-am/" class="more-link">Read on</a>
 	</div>
 
 <div class="meta">
