@@ -3,7 +3,6 @@ layout: post
 title: "Configuring XMonad on Ubuntu"
 date: 2013-05-02 21:01
 comments: true
-published: false
 categories: [xmonad, ubuntu, setup]
 ---
 
