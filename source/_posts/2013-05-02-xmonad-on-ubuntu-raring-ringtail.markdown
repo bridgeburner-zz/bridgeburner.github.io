@@ -7,27 +7,31 @@ published: false
 categories: [xmonad, ubuntu, setup]
 ---
 
-I first tried XMonad about a year ago, and its since become an
-indispensable part of my standard Linux setup. It's an incredible
-productivity booster, especially on dual monitor setups, making it
-infinitely easier to rapidly switch between multiple windows. It makes
-me weep a little inside each time I have to boot back into Windows'
-single, keybinding devoid workspace (on a side note, I've used both
-DisplayFusion and UltraMon with some success for a more keyboard
-focused experience, so it isn't all bad. Still...).
+I first tried [XMonad](http://xmonad.org/) about a year ago, and its
+since become an indispensable part of my standard Linux setup. It's an
+incredible productivity booster, especially on dual monitor setups,
+making it infinitely easier to rapidly switch between multiple
+windows. It makes me weep a little inside each time I have to boot
+back into Windows' single, non-tiling, keybinding devoid workspace (on
+a side note, I've used both
+[DisplayFusion](http://www.displayfusion.com/) and
+[UltraMon](http://www.realtimesoft.com/ultramon/) with some success
+for a more keyboard focused experience, so it isn't all
+bad. Still...)
+
+<!-- more -->
 
 Now, I either lie in the segment of Ubuntu users for whom XMonad does
 not work out of the box, or the segment of Ubuntu users for whom
-XMonad does not work out of the box and who need to head to the
-interwebs to figure it out. Since I also end up
-installing/re-installing Linux on VM's, or my laptop, or the lab
-computer once every 4-5 months, and forgetting the solutions I'd arrived
-at previously with astonishing punctuality, this is a
-less than ideal scenario.
+XMonad does not work out of the box *and* who need to head to the
+interwebs to figure it out. Since I also end up (re-)installing Linux
+on VM's, or my laptop, or the lab computer once every 4-5 months, and
+forgetting the solutions I'd arrived at previously with astonishing
+punctuality, this is a less than ideal scenario.
 
-So in the interest of documenting this for myself (and anyone else who
-finds this useful) here are the steps to get XMonad to work on your
-latest Ubuntu install -
+So in the interest of documenting this for my future self (and anyone
+else who might find this useful) here are the steps to get XMonad to
+work on your latest Ubuntu install -
 
 ##### 1. Install gnome-panel
 
