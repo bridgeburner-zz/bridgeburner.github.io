@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ubuntu | Vishwath Mohan]]></title>
+  <link href="http://vishwathmohan.com/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://vishwathmohan.com/"/>
+  <updated>2013-05-03T18:46:12-05:00</updated>
+  <id>http://vishwathmohan.com/</id>
+  <author>
+    <name><![CDATA[Vishwath Mohan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Configuring XMonad on Ubuntu 13.04]]></title>
+    <link href="http://vishwathmohan.com/blog/2013/05/02/xmonad-on-ubuntu-raring-ringtail/"/>
+    <updated>2013-05-02T21:01:00-05:00</updated>
+    <id>http://vishwathmohan.com/blog/2013/05/02/xmonad-on-ubuntu-raring-ringtail</id>
+    <content type="html"><![CDATA[<p>I first tried <a href="http://xmonad.org/">XMonad</a> about a year ago, and its
+since become an indispensable part of my standard Linux setup. It's an
+incredible productivity booster, especially on dual monitor setups,
+making it infinitely easier to rapidly switch between multiple
+windows. It makes me weep a little inside each time I have to boot
+back into Windows' single, non-tiling, keybinding devoid workspace (on
+a side note, I've used both
+<a href="http://www.displayfusion.com/">DisplayFusion</a> and
+<a href="http://www.realtimesoft.com/ultramon/">UltraMon</a> with some success
+for a more keyboard focused experience, so it isn't all
+bad. Still...)</p>
+
+<!-- more -->
+
+
+<p>Now, I either lie in the segment of Ubuntu users for whom XMonad does
+not work out of the box, or the segment of Ubuntu users for whom
+XMonad does not work out of the box <em>and</em> who need to head to the
+interwebs to figure it out. Since I also end up (re-)installing Linux
+on VM's, or my laptop, or the lab computer once every 4-5 months, and
+forgetting the solutions I'd arrived at previously with astonishing
+punctuality, this is a less than ideal scenario.</p>
+
+<p>So in the interest of documenting this for my future self (and anyone
+else who might find this useful) here are the steps to get XMonad to
+work on your latest Ubuntu install -</p>
+
+<h5>1. Install gnome-panel</h5>
+
+<p><code>
+$ sudo apt-get install gnome-panel
+</code></p>
+
+<br>
+
+
+<h5>2. Install XMonad</h5>
+
+<p><code>
+$ sudo apt-get install xmonad
+</code></p>
+
+<br>
+
+
+<h5>3. Create your xmonad.hs</h5>
+
+<p>   This one tripped me up for a while, but I realized I suffer from
+   <a href="https://bugs.launchpad.net/ubuntu/+source/xmonad/+bug/1059358">this bug</a>
+   every time. I haven't figured out why, but the fix is pretty
+   simple. Just, create a (possibly empty) xmonad.hs like so -</p>
+
+<p><code>
+$ mkdir ~/.xmonad
+$ touch ~/.xmonad/xmonad.hs
+</code></p>
+
+<br>
+
+
+<h5>4. Replace your default mod key</h5>
+
+<p>   I like replacing the mod key from its default of <em>Alt</em> to <em>Super</em>
+   (the Windows key). If that makes sense to you, you might want to
+   edit your xmonad.hs with the minimal -</p>
+
+<p>```haskell Replace the default mod key
+import XMonad
+import XMonad.Config.Gnome</p>
+
+<p>main = xmonad gnomeConfig</p>
+
+<pre><code>   { modMask = mod4Mask
+   }
+</code></pre>
+
+<p>```</p>
+
+<br>
+
+
+<h5>5. Reload your xsession</h5>
+
+<p>   Log out of your current session and log back in using the 'Gnome
+   with XMonad' option.</p>
+
+<p>And there you go. Five incredibly simple steps to a vastly improved
+dual monitor experience. Happy hacking!</p>
+]]></content>
+  </entry>
+  
+</feed>
