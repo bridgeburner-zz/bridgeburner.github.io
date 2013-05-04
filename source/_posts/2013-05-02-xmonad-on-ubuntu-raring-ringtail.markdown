@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Configuring XMonad on Ubuntu"
+title: "Configuring XMonad on Ubuntu 13.04"
 date: 2013-05-02 21:01
 comments: true
 categories: [xmonad, ubuntu, setup]
+keywords: xmonad, ubuntu, raring ringtail
+description: How to setup XMonad on Ubuntu 13.04 Raring Ringtail
 ---
 
 I first tried [XMonad](http://xmonad.org/) about a year ago, and its

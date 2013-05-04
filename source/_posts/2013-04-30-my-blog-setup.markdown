@@ -4,6 +4,8 @@ title: "My Blog Setup"
 date: 2013-04-30 23:36
 comments: true
 categories: [ruby, octopress, blog]
+keywords: octopress, blog
+description: My Octopress blog setup
 ---
 
 I'm obsessive to a fault when it comes to researching the right tool
