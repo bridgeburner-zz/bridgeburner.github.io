@@ -49,10 +49,13 @@ SITEMAP = {
 }
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# TODO: Add to template somewhere
+LINKS = (('Darknet - The Darkside', 'http://www.darknet.org.uk/'),
+         ('WebstersProdigy', 'http://webstersprodigy.net/'),
+         ('Malware don\'t need Coffee', 'http://webstersprodigy.net/'),
+         ('Krebs on Security', 'http://krebsonsecurity.com/'),
+         ('Schneier on Security', 'https://www.schneier.com/'),
+         ('Thoughcrime', 'http://thoughtcrime.org/blog/'),)
 
 # Fork on Github Ribbon
 GITHUB_URL = 'https://github.com/bridgeburner/'

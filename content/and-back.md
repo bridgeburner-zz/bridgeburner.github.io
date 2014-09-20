@@ -1,6 +1,6 @@
 title: ...And we're back
 slug: and-back
-date: 2014-09-13 16:00
+date: 2014-09-20 16:00
 category: Blog
 tags: blog, pelican, setup
 summary:It's been more than a year since I've blogged (which might or might not be a reflection of my IRL productivity over that same time frame), and the slowly rising level of shame proved to be just enough to counter the unstoppable juggernaut that is my laziness. I now know how much my laziness is worth - about 16 months of languishing.
@@ -20,10 +20,10 @@ no.
 
 You see, I like Ruby, but I absolutely adore Python. The
 [last time](my-blog-setup.html) I was on the hunt for a suitable
-framework, Jekyll and Octopress seemed a lot better conceived than
-their Python counterparts (because who am I to sit and muck about with
-themes and the like...html/css is too much effort). However, this time
-around I was *very* pleasantly surprised at the maturity of both
+framework, Jekyll and Octopress seemed better conceived aesthetically
+than their Python counterparts (because who am I to sit and muck about
+with themes and the like, html/css is too much effort). However, this
+time around I was *very* pleasantly surprised at the maturity of both
 [Nikola](http://getnikola.com/) and
 [Pelican](http://blog.getpelican.com/).
 
