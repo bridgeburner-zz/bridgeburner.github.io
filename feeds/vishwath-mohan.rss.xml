@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vishwath Mohan</title><link>/</link><description>Coffee, Security, AI, Armchair Philosophy</description><atom:link href="/feeds%5Cvishwath-mohan.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 20 Sep 2014 16:00:00 -0500</lastBuildDate><item><title>...And we're back</title><link>/and-back.html</link><description>&lt;p&gt;It's been more than a year since I've blogged (which might or might
+not be a reflection of my IRL productivity over that same time frame),
+and the slowly rising level of shame proved to be just enough to
+counter the unstoppable juggernaut that is my laziness. I now know how
+much my laziness is worth - about 16 months of languishing.&lt;/p&gt;
+&lt;p&gt;Of course, it would offend my deeply rooted laziness if I refused to
+prevaricate in the 'passive-aggresive-productive-but-not-really' way I
+do best and spend hours researching worthy blog framework contenders
+first. So that's just what I did. It wasn't all fruitless though, oh
+no.&lt;/p&gt;
+&lt;p&gt;You see, I like Ruby, but I absolutely adore Python. The
+&lt;a href="my-blog-setup.html"&gt;last time&lt;/a&gt; I was on the hunt for a suitable
+framework, Jekyll and Octopress seemed better conceived aesthetically
+than their Python counterparts (because who am I to sit and muck about
+with themes and the like, html/css is too much effort). However, this
+time around I was &lt;em&gt;very&lt;/em&gt; pleasantly surprised at the maturity of both
+&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; and
+&lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To my inexperienced eyes, they were both close enough in terms of
+simplicity, features, community, and documentation that I ended up
+making a decision based on...well nothing really, call it a coin-flip
+that went in Pelican's favor. So far, it's been rather trivial to get
+Pelican up and working, and cook up a quick script to migrate my posts
+(&lt;strong&gt;all&lt;/strong&gt; 3 of them) over. I'm using the very awesome
+&lt;a href="https://github.com/hdra/pelican-cait"&gt;pelican-cait&lt;/a&gt; theme, which I've
+minimally modified for my needs.&lt;/p&gt;
+&lt;p&gt;Unlike last time, I also have a vague, amorphous plan in terms of
+subsequent posts, so this shouldn't turn into a graveyard like my
+previous attempt. Only time will tell though...&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vishwath Mohan</dc:creator><pubDate>Sat, 20 Sep 2014 16:00:00 -0500</pubDate><guid>tag:,2014-09-20:and-back.html</guid><category>blog</category><category>pelican</category><category>setup</category></item><item><title>Configuring XMonad on Ubuntu 13.04</title><link>/xmonad-on-ubuntu.html</link><description>&lt;p&gt;I first tried &lt;a href="http://xmonad.org/"&gt;XMonad&lt;/a&gt; about a year ago, and its
+since become an indispensable part of my standard Linux setup. It's an
+incredible productivity booster, especially on dual monitor setups,
+making it infinitely easier to rapidly switch between multiple
+windows. It makes me weep a little inside each time I have to boot
+back into Windows' single, non-tiling, keybinding devoid workspace (on
+a side note, I've used both
+&lt;a href="http://www.displayfusion.com/"&gt;DisplayFusion&lt;/a&gt; and
+&lt;a href="http://www.realtimesoft.com/ultramon/"&gt;UltraMon&lt;/a&gt; with some success
+for a more keyboard focused experience, so it isn't all
+bad. Still...)&lt;/p&gt;
+&lt;p&gt;Now, I either lie in the segment of Ubuntu users for whom XMonad does
+not work out of the box, or the segment of Ubuntu users for whom
+XMonad does not work out of the box &lt;em&gt;and&lt;/em&gt; who need to head to the
+interwebs to figure it out. Since I also end up (re-)installing Linux
+on VM's, or my laptop, or the lab computer once every 4-5 months, and
+forgetting the solutions I'd arrived at previously with astonishing
+punctuality, this is a less than ideal scenario.&lt;/p&gt;
+&lt;p&gt;So in the interest of documenting this for my future self (and anyone
+else who might find this useful) here are the steps to get XMonad to
+work on your latest Ubuntu install -&lt;/p&gt;
+&lt;h4&gt;1. Install gnome-panel&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install gnome-panel
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;2. Install XMonad&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install xmonad
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;3. Create your xmonad.hs&lt;/h4&gt;
+&lt;p&gt;This one tripped me up for a while, but I realized I suffer from
+   &lt;a href="https://bugs.launchpad.net/ubuntu/+source/xmonad/+bug/1059358"&gt;this bug&lt;/a&gt;
+   every time. I haven't figured out why, but the fix is pretty
+   simple. Just, create a (possibly empty) xmonad.hs like so -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir ~/.xmonad
+&lt;span class="nv"&gt;$ &lt;/span&gt;touch ~/.xmonad/xmonad.hs
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;4. Replace your default mod key&lt;/h4&gt;
+&lt;p&gt;I like replacing the mod key from its default of &lt;em&gt;Alt&lt;/em&gt; to &lt;em&gt;Super&lt;/em&gt;
+   (the Windows key). If that makes sense to you, you might want to
+   edit your xmonad.hs with the minimal -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;XMonad&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;XMonad.Config.Gnome&lt;/span&gt;
+
+&lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="ow"&gt;=&lt;/span&gt; &lt;span class="n"&gt;xmonad&lt;/span&gt; &lt;span class="n"&gt;gnomeConfig&lt;/span&gt;
+       &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;modMask&lt;/span&gt; &lt;span class="ow"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mod4Mask&lt;/span&gt;
+       &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;5. Reload your xsession&lt;/h4&gt;
+&lt;p&gt;Log out of your current session and log back in using the 'Gnome
+   with XMonad' option.&lt;/p&gt;
+&lt;p&gt;And there you go. Five incredibly simple steps to a vastly improved
+dual monitor experience. Happy hacking!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vishwath Mohan</dc:creator><pubDate>Thu, 02 May 2013 21:01:00 -0500</pubDate><guid>tag:,2013-05-02:xmonad-on-ubuntu.html</guid><category>xmonad</category><category>ubuntu</category><category>raring ringtail</category><category>setup</category></item><item><title>My Blog Setup</title><link>/my-blog-setup.html</link><description>&lt;p&gt;I'm obsessive to a fault when it comes to researching the right tool
+for a job. I could (and do) spend days sifting through article
+after article comparing different languages, libraries, programming
+paradigms, every little thing you could imagine every time I start a
+new project. It's actually one of the reasons I have so many
+incomplete projects on my hands.&lt;/p&gt;
+&lt;h3&gt;The Search&lt;/h3&gt;
+&lt;p&gt;Naturally, picking a blog engine to use was no exception. I used a
+small checklist of features for comparison as I looked around. Here
+they are in no particular order -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;As a programmer I was looking for something that didn't deviate too
+  far from a coding workflow (which is a fancy way of saying "me want
+  emacs").&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As a security researcher I obviously prefered a solution that was as
+  secure as possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As a lazy person, I wanted something that would be both functional
+  and aesthetically sensible out of the box (or with minimal setup).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I didn't need an overwhelming set of features, so simplicity (both
+  of use and design) was preferable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I wanted to be able to go under the hood to make my own
+  customizations if I wanted to. But more than that, I wanted to be
+  able to look at the source and really understand what was going
+  on. This is obviously harder that larger the code base gets, and so
+  is somewhat related to the previous point. It's also related to the
+  next two points.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it catered to my irrational dislike and ignorance of PHP, then
+  all the better (I really need to sit down and go beyond the hello
+  world stuff with PHP at some point. Hopefully that point is very,
+  very far away).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it catered to my irrational (it's not irrational really, I only
+  say this out of a sense of fairness to the point above) love and
+  appreciation of Python, Ruby, or Lisp then all the better.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Warning: The rest of this post is outdated. I now use the most
+ excellent &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; instead, which hits all
+ the plus point above, and is additionally in Python. You can read
+ about that &lt;a href="and-back.html"&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Octopress is awesome&lt;/h3&gt;
+&lt;p&gt;I picked &lt;a href="https://github.com/mojombo/jekyll"&gt;Jekyll&lt;/a&gt; initially, which
+is more blog generator than blog engine. It takes a configuration
+file, your posts and pages written in markdown and uses them to
+generate (people also call it baking) an almost entirely static blog.&lt;/p&gt;
+&lt;p&gt;Eventually though, I settled with
+&lt;a href="http://octopress.org/"&gt;Octopress&lt;/a&gt;---an extra layer over Jeyll that
+manages to add just enough to hit that sweet spot between features and
+ease of use. It integrates easily with Twitter, Google Analytics and
+other useful services, it also integrates with comment systems like
+Disqus (which to be fair, Jekyll does too), and has options to easily
+deploy to &lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt;,
+&lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt; or any rsync enabled hosting
+service. I really like how well Octopress manages to cover every
+single point in my checklist -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Octopress allows me to write my posts locally using my editor of
+   choice (*&lt;em&gt;cough&lt;/em&gt;*Emacs*&lt;em&gt;cough&lt;/em&gt;*), and makes it trivial to save,
+   generate and deploy the generated site.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jekyll (and consequently Octopress) uses git to manage both the
+   markdown source and the generated site, making it easy to work
+   across mulitple machines and still keep things synchronized.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can't get more secure than an entirely (almost) static
+   site. Well, technically you could not have a site at all and be
+   more secure. But practically, a baked blog is about as exploit free
+   as you could get.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assuming you have Git and Ruby installed on your machine already,
+   you can have a blog up and running in literally a few minutes. The
+   Octopress site does a great job of explaining how to &lt;a href="http://octopress.org/docs/setup/"&gt;install and
+   configure&lt;/a&gt; it to your liking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I switched my theme to
+   &lt;a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/"&gt;Fabric&lt;/a&gt;---which
+   I'm using as is simply because of how much I love it---but it
+   wasn't because of any shortcomings with the default theme, which
+   looks just great.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The source for both Jekyll and Octopress is simple, well-written,
+   and easy to read. It certainly doesn't hurt that they're both
+   implemented in Ruby.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I'm currently hosting the blog on Github Pages, which seemed like a
+good starting point. I don't have comments enabled at the moment,
+which might seem like a controversial choice. I happened to read through
+&lt;a href="http://mattgemmell.com/"&gt;Matt Gemmel's&lt;/a&gt; excellent chronicling of his
+decision to disable comments recently, (you can read his first post on it
+&lt;a href="http://mattgemmell.com/2011/11/29/comments-off/"&gt;here&lt;/a&gt;, and the
+bottom of that page contains links to his follow-ups) and agree more
+or less with what he has to say.&lt;/p&gt;
+&lt;p&gt;As it stands I don't really expect a vast readership, but if you have
+something to say about anything I post, I'd be glad for you to give me
+a shout out on &lt;a href="https://twitter.com/vishwath"&gt;Twitter&lt;/a&gt; or by
+&lt;a href="mailto:vishwath.mohan@gmail.com"&gt;mail&lt;/a&gt;, both of which seem like more
+natural mediums to carry out a discussion.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vishwath Mohan</dc:creator><pubDate>Tue, 30 Apr 2013 23:36:00 -0500</pubDate><guid>tag:,2013-04-30:my-blog-setup.html</guid></item><item><title>Here I am</title><link>/so-here-i-am.html</link><description>&lt;p&gt;I've been meaning to blog for some time now, having a vague sense that
+it would be beneficial but never really sitting down to examine it
+more closely. I did just that today though, and realized that there
+are so many good reasons for me to maintain one there was no point in
+delaying it any longer. It seemed natural to begin by listing the top
+3 things I'm expecting blogging will help me with.&lt;/p&gt;
+&lt;h4&gt;1. Complete what I begin&lt;/h4&gt;
+&lt;p&gt;Often, when I'm working on a new project, I'm sorely tempted to go
+online in an attempt to better educate myself about what's already
+been done. A few hours and many links later, I've found something else
+that interests me so much that I drop what I was working on to attempt
+that instead.&lt;/p&gt;
+&lt;p&gt;In some ways its a consequence of an entirely good thing---a sense of
+fascination for the things I encounter. What I really need is
+something to force my attention back to what I've started so I can see
+them through to completion. Writing publicly about each new thing I
+begin will go a long way towards that (that's the hope at any rate).&lt;/p&gt;
+&lt;h4&gt;2. Remember what I read&lt;/h4&gt;
+&lt;p&gt;I suffer from a mild case of information addiction. Now I don't
+feel the compulsive need to check social networks or email. I'm even
+fairly sure that my Facebook login frequency is firmly in the
+offend-my-friends zone. My information drug of choice happens to be
+rss feeds (Quora comes a close second), and I've found that I can spend
+the entire day skipping from one fascinating article to the next.&lt;/p&gt;
+&lt;p&gt;This wouldn't be so bad if I didn't have an entirely lousy memory.
+Currently, I forget a lot of what I come across and am little better
+off than not having read it at all. I might even be worse off for any
+induced
+&lt;a href="http://psychcentral.com/blog/archives/2013/01/21/overcoming-information-overload/"&gt;cognitive overload&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I've decided that the best way to make this work for me is to attempt
+writing about (even a fraction of) the things I read. Writing is a
+useful device to improve both retention and recall, and although
+typing isn't quite as effective as putting
+&lt;a href="http://online.wsj.com/article/SB10001424052748704631504575531932754922518.html"&gt;pen to paper&lt;/a&gt;,
+its sure to help me remember more of what I read. More importantly,
+forcing my ideas onto (virtual) paper will afford me the opportunity
+to recognize connections between seemingly disparate ideas and place
+them into a larger, richer perspective of the world.&lt;/p&gt;
+&lt;h4&gt;3. Improve as a person&lt;/h4&gt;
+&lt;p&gt;Finally, writing in of itself is a great habit to cultivate. Leo
+Babuta has a great &lt;a href="http://zenhabits.net/write-daily/"&gt;article&lt;/a&gt; that
+explains the many good things that come from regular writing. The
+reasons that really resonated with me were the ability to -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Think from the perspective of people around you.&lt;/li&gt;
+&lt;li&gt;Improve the clarity and logical consistency of your thoughts and
+   opinions.&lt;/li&gt;
+&lt;li&gt;Reflect on your life and choices&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Individually, each of these traits are immensely beneficial. Together,
+they transform you into a better, wiser person. And who wouldn't want
+that?&lt;/p&gt;
+&lt;p&gt;So...here I am!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vishwath Mohan</dc:creator><pubDate>Tue, 30 Apr 2013 21:00:00 -0500</pubDate><guid>tag:,2013-04-30:so-here-i-am.html</guid></item></channel></rss>

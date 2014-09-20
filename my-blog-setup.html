@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>    My Blog Setup
+</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="/theme/css/normalize.css">
+        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+    <link rel="stylesheet" href="/theme/css/blog.css">
+    <link rel="stylesheet" href="/theme/css/github.css">
+        <script src="/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href=""><h1><i class="icon-coffee"></i> Vishwath Mohan</h1></a>
+        <p id="site-desc"> Coffee, Security, AI, Armchair Philosophy </p>
+    </hgroup>
+    <nav>
+        <ul id="nav-links">
+                <li><a href="/index.html">Blog</a></li>
+                <li><a href="/pages/about-me.html">About Me</a></li>
+        </ul>
+        <ul id="nav-services" class="centered-nav">
+          <li style="display: inline"><a href="https://twitter.com/vishwath" target="twitter">
+            <i class="icon-twitter svc-badge icon-2x"></i></a></li>
+          <li style="display: inline"><a href="https://plus.google.com/+VishwathMohan" target="google-plus-sign">
+            <i class="icon-google-plus-sign svc-badge icon-2x"></i></a></li>
+          <li style="display: inline"><a href="https://github.com/bridgeburner" target="github-alt">
+            <i class="icon-github-alt svc-badge icon-2x"></i></a></li>
+        </ul>
+    </nav>
+<footer id="site-info">
+    <p>
+        Proudly powered by <a href="http://getpelican.com/" target="pelican">Pelican</a> and <a href="http://python.org/" target="python">Python</a>. Theme by <a href="https://github.com/hdra/pelican-cait" target="github">hndr</a>.
+    </p>
+    <p>
+        Textures by <a href="http://subtlepatterns.com/" target="subtlepatterns">Subtle Pattern</a>. Font Awesome by <a href="http://fortawesome.github.io/Font-Awesome/" target="github">Dave Grandy</a>.
+    </p>
+</footer></header>
+    <div id="post-container">
+        <ol id="post-list">
+            <li>
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <time class="post-time" datetime="2013-04-30T23:36:00" pubdate>
+                            Tue 30 April 2013
+                        </time>
+                        <a href="/my-blog-setup.html" rel="bookmark"><h1>My Blog Setup</h1></a>
+                    </header>
+
+                    <section class="post-content">
+                        <p>I'm obsessive to a fault when it comes to researching the right tool
+for a job. I could (and do) spend days sifting through article
+after article comparing different languages, libraries, programming
+paradigms, every little thing you could imagine every time I start a
+new project. It's actually one of the reasons I have so many
+incomplete projects on my hands.</p>
+<h3>The Search</h3>
+<p>Naturally, picking a blog engine to use was no exception. I used a
+small checklist of features for comparison as I looked around. Here
+they are in no particular order -</p>
+<ul>
+<li>
+<p>As a programmer I was looking for something that didn't deviate too
+  far from a coding workflow (which is a fancy way of saying "me want
+  emacs").</p>
+</li>
+<li>
+<p>As a security researcher I obviously prefered a solution that was as
+  secure as possible.</p>
+</li>
+<li>
+<p>As a lazy person, I wanted something that would be both functional
+  and aesthetically sensible out of the box (or with minimal setup).</p>
+</li>
+<li>
+<p>I didn't need an overwhelming set of features, so simplicity (both
+  of use and design) was preferable.</p>
+</li>
+<li>
+<p>I wanted to be able to go under the hood to make my own
+  customizations if I wanted to. But more than that, I wanted to be
+  able to look at the source and really understand what was going
+  on. This is obviously harder that larger the code base gets, and so
+  is somewhat related to the previous point. It's also related to the
+  next two points.</p>
+</li>
+<li>
+<p>If it catered to my irrational dislike and ignorance of PHP, then
+  all the better (I really need to sit down and go beyond the hello
+  world stuff with PHP at some point. Hopefully that point is very,
+  very far away).</p>
+</li>
+<li>
+<p>If it catered to my irrational (it's not irrational really, I only
+  say this out of a sense of fairness to the point above) love and
+  appreciation of Python, Ruby, or Lisp then all the better.</p>
+</li>
+</ul>
+<p><em>Warning: The rest of this post is outdated. I now use the most
+ excellent <a href="http://getpelican.com">Pelican</a> instead, which hits all
+ the plus point above, and is additionally in Python. You can read
+ about that <a href="and-back.html">here</a></em></p>
+<h3>Octopress is awesome</h3>
+<p>I picked <a href="https://github.com/mojombo/jekyll">Jekyll</a> initially, which
+is more blog generator than blog engine. It takes a configuration
+file, your posts and pages written in markdown and uses them to
+generate (people also call it baking) an almost entirely static blog.</p>
+<p>Eventually though, I settled with
+<a href="http://octopress.org/">Octopress</a>---an extra layer over Jeyll that
+manages to add just enough to hit that sweet spot between features and
+ease of use. It integrates easily with Twitter, Google Analytics and
+other useful services, it also integrates with comment systems like
+Disqus (which to be fair, Jekyll does too), and has options to easily
+deploy to <a href="http://pages.github.com/">Github Pages</a>,
+<a href="https://www.heroku.com/">Heroku</a> or any rsync enabled hosting
+service. I really like how well Octopress manages to cover every
+single point in my checklist -</p>
+<ol>
+<li>
+<p>Octopress allows me to write my posts locally using my editor of
+   choice (*<em>cough</em>*Emacs*<em>cough</em>*), and makes it trivial to save,
+   generate and deploy the generated site.</p>
+</li>
+<li>
+<p>Jekyll (and consequently Octopress) uses git to manage both the
+   markdown source and the generated site, making it easy to work
+   across mulitple machines and still keep things synchronized.</p>
+</li>
+<li>
+<p>You can't get more secure than an entirely (almost) static
+   site. Well, technically you could not have a site at all and be
+   more secure. But practically, a baked blog is about as exploit free
+   as you could get.</p>
+</li>
+<li>
+<p>Assuming you have Git and Ruby installed on your machine already,
+   you can have a blog up and running in literally a few minutes. The
+   Octopress site does a great job of explaining how to <a href="http://octopress.org/docs/setup/">install and
+   configure</a> it to your liking.</p>
+</li>
+</ol>
+<p>I switched my theme to
+   <a href="http://panks.me/blog/2013/01/new-octopress-theme-fabric/">Fabric</a>---which
+   I'm using as is simply because of how much I love it---but it
+   wasn't because of any shortcomings with the default theme, which
+   looks just great.</p>
+<ol>
+<li>The source for both Jekyll and Octopress is simple, well-written,
+   and easy to read. It certainly doesn't hurt that they're both
+   implemented in Ruby.</li>
+</ol>
+<p>I'm currently hosting the blog on Github Pages, which seemed like a
+good starting point. I don't have comments enabled at the moment,
+which might seem like a controversial choice. I happened to read through
+<a href="http://mattgemmell.com/">Matt Gemmel's</a> excellent chronicling of his
+decision to disable comments recently, (you can read his first post on it
+<a href="http://mattgemmell.com/2011/11/29/comments-off/">here</a>, and the
+bottom of that page contains links to his follow-ups) and agree more
+or less with what he has to say.</p>
+<p>As it stands I don't really expect a vast readership, but if you have
+something to say about anything I post, I'd be glad for you to give me
+a shout out on <a href="https://twitter.com/vishwath">Twitter</a> or by
+<a href="mailto:vishwath.mohan@gmail.com">mail</a>, both of which seem like more
+natural mediums to carry out a discussion.</p>
+                    </section>
+                    <hr/>
+                    <aside class="post-meta">
+                        <p>Category: <a href="/category/blog.html">Blog</a></p>
+                    </aside>
+                    <hr/>
+                </article>
+            </li>
+        </ol>
+    </div>
+        </div>
+
+        <script src="/theme/js/main.js"></script>
+    </body>
+</html>

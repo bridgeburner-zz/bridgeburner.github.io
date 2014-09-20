@@ -1,35 +1,125 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://vishwathmohan.com/blog/2013/04/30/so-here-i-am/</loc>
-        <lastmod>2013-05-02T20:45:48-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/blog/2013/04/30/my-blog-setup/</loc>
-        <lastmod>2013-05-03T18:35:27-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/blog/2013/05/02/xmonad-on-ubuntu-raring-ringtail/</loc>
-        <lastmod>2013-05-03T18:36:52-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/robots.txt</loc>
-        <lastmod>2013-05-02T20:45:48-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/search.html</loc>
-        <lastmod>2013-05-02T20:45:48-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/about-me/</loc>
-        <lastmod>2013-05-02T20:45:48-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/blog/archives/</loc>
-        <lastmod>2013-05-03T18:36:52-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://vishwathmohan.com/</loc>
-        <lastmod>2013-05-03T18:36:52-05:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>/index.html</loc>
+<lastmod>2014-09-20T16:04:56-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/archives.html</loc>
+<lastmod>2014-09-20T16:04:56-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tags.html</loc>
+<lastmod>2014-09-20T16:04:56-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/categories.html</loc>
+<lastmod>2014-09-20T16:04:56-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/pages/about-me.html</loc>
+<lastmod>2013-04-25T03:03:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/and-back.html</loc>
+<lastmod>2014-09-20T16:00:00-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/xmonad-on-ubuntu.html</loc>
+<lastmod>2013-05-02T21:01:00-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/my-blog-setup.html</loc>
+<lastmod>2013-04-30T23:36:00-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/so-here-i-am.html</loc>
+<lastmod>2013-04-30T21:00:00-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/category/blog.html</loc>
+<lastmod>2014-09-20T16:00:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/pelican.html</loc>
+<lastmod>2014-09-20T16:00:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/xmonad.html</loc>
+<lastmod>2013-05-02T21:01:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/raring-ringtail.html</loc>
+<lastmod>2013-05-02T21:01:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/setup.html</loc>
+<lastmod>2014-09-20T16:00:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/blog.html</loc>
+<lastmod>2014-09-20T16:00:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/ubuntu.html</loc>
+<lastmod>2013-05-02T21:01:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/author/vishwath-mohan.html</loc>
+<lastmod>2014-09-20T16:00:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
 </urlset>

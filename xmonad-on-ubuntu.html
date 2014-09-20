@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>    Configuring XMonad on Ubuntu 13.04
+</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="/theme/css/normalize.css">
+        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+    <link rel="stylesheet" href="/theme/css/blog.css">
+    <link rel="stylesheet" href="/theme/css/github.css">
+        <script src="/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href=""><h1><i class="icon-coffee"></i> Vishwath Mohan</h1></a>
+        <p id="site-desc"> Coffee, Security, AI, Armchair Philosophy </p>
+    </hgroup>
+    <nav>
+        <ul id="nav-links">
+                <li><a href="/index.html">Blog</a></li>
+                <li><a href="/pages/about-me.html">About Me</a></li>
+        </ul>
+        <ul id="nav-services" class="centered-nav">
+          <li style="display: inline"><a href="https://twitter.com/vishwath" target="twitter">
+            <i class="icon-twitter svc-badge icon-2x"></i></a></li>
+          <li style="display: inline"><a href="https://plus.google.com/+VishwathMohan" target="google-plus-sign">
+            <i class="icon-google-plus-sign svc-badge icon-2x"></i></a></li>
+          <li style="display: inline"><a href="https://github.com/bridgeburner" target="github-alt">
+            <i class="icon-github-alt svc-badge icon-2x"></i></a></li>
+        </ul>
+    </nav>
+<footer id="site-info">
+    <p>
+        Proudly powered by <a href="http://getpelican.com/" target="pelican">Pelican</a> and <a href="http://python.org/" target="python">Python</a>. Theme by <a href="https://github.com/hdra/pelican-cait" target="github">hndr</a>.
+    </p>
+    <p>
+        Textures by <a href="http://subtlepatterns.com/" target="subtlepatterns">Subtle Pattern</a>. Font Awesome by <a href="http://fortawesome.github.io/Font-Awesome/" target="github">Dave Grandy</a>.
+    </p>
+</footer></header>
+    <div id="post-container">
+        <ol id="post-list">
+            <li>
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <time class="post-time" datetime="2013-05-02T21:01:00" pubdate>
+                            Thu 02 May 2013
+                        </time>
+                        <a href="/xmonad-on-ubuntu.html" rel="bookmark"><h1>Configuring XMonad on Ubuntu 13.04</h1></a>
+                    </header>
+
+                    <section class="post-content">
+                        <p>I first tried <a href="http://xmonad.org/">XMonad</a> about a year ago, and its
+since become an indispensable part of my standard Linux setup. It's an
+incredible productivity booster, especially on dual monitor setups,
+making it infinitely easier to rapidly switch between multiple
+windows. It makes me weep a little inside each time I have to boot
+back into Windows' single, non-tiling, keybinding devoid workspace (on
+a side note, I've used both
+<a href="http://www.displayfusion.com/">DisplayFusion</a> and
+<a href="http://www.realtimesoft.com/ultramon/">UltraMon</a> with some success
+for a more keyboard focused experience, so it isn't all
+bad. Still...)</p>
+<p>Now, I either lie in the segment of Ubuntu users for whom XMonad does
+not work out of the box, or the segment of Ubuntu users for whom
+XMonad does not work out of the box <em>and</em> who need to head to the
+interwebs to figure it out. Since I also end up (re-)installing Linux
+on VM's, or my laptop, or the lab computer once every 4-5 months, and
+forgetting the solutions I'd arrived at previously with astonishing
+punctuality, this is a less than ideal scenario.</p>
+<p>So in the interest of documenting this for my future self (and anyone
+else who might find this useful) here are the steps to get XMonad to
+work on your latest Ubuntu install -</p>
+<h4>1. Install gnome-panel</h4>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install gnome-panel
+</pre></div>
+
+
+<h4>2. Install XMonad</h4>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install xmonad
+</pre></div>
+
+
+<h4>3. Create your xmonad.hs</h4>
+<p>This one tripped me up for a while, but I realized I suffer from
+   <a href="https://bugs.launchpad.net/ubuntu/+source/xmonad/+bug/1059358">this bug</a>
+   every time. I haven't figured out why, but the fix is pretty
+   simple. Just, create a (possibly empty) xmonad.hs like so -</p>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir ~/.xmonad
+<span class="nv">$ </span>touch ~/.xmonad/xmonad.hs
+</pre></div>
+
+
+<h4>4. Replace your default mod key</h4>
+<p>I like replacing the mod key from its default of <em>Alt</em> to <em>Super</em>
+   (the Windows key). If that makes sense to you, you might want to
+   edit your xmonad.hs with the minimal -</p>
+<div class="highlight"><pre><span class="kr">import</span> <span class="nn">XMonad</span>
+<span class="kr">import</span> <span class="nn">XMonad.Config.Gnome</span>
+
+<span class="nf">main</span> <span class="ow">=</span> <span class="n">xmonad</span> <span class="n">gnomeConfig</span>
+       <span class="p">{</span> <span class="n">modMask</span> <span class="ow">=</span> <span class="n">mod4Mask</span>
+       <span class="p">}</span>
+</pre></div>
+
+
+<h4>5. Reload your xsession</h4>
+<p>Log out of your current session and log back in using the 'Gnome
+   with XMonad' option.</p>
+<p>And there you go. Five incredibly simple steps to a vastly improved
+dual monitor experience. Happy hacking!</p>
+                    </section>
+                    <hr/>
+                    <aside class="post-meta">
+                        <p>Category: <a href="/category/blog.html">Blog</a></p>
+                        <p>Tags: <a href="/tag/xmonad.html">xmonad</a>, <a href="/tag/ubuntu.html">ubuntu</a>, <a href="/tag/raring-ringtail.html">raring ringtail</a>, <a href="/tag/setup.html">setup</a>, </p>
+                    </aside>
+                    <hr/>
+                </article>
+            </li>
+        </ol>
+    </div>
+        </div>
+
+        <script src="/theme/js/main.js"></script>
+    </body>
+</html>
