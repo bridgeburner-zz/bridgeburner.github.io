@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Vishwath Mohan'
 SITENAME = u'Vishwath Mohan'
@@ -13,10 +14,10 @@ DEFAULT_LANG = u'en'
 
 # Static Pages
 STATIC_PATHS = ['images', 'assets', 'extras/CNAME']
-EXTRA_PATH_METADATA = {'extras\\CNAME': {'path': 'CNAME'}, }
+EXTRA_PATH_METADATA = {os.path.join('extras', 'CNAME'): {'path': 'CNAME'}, }
 
 # Putting robots as a template page because we want to replace the SITEURL
-TEMPLATE_PAGES = {'extras\\robots.txt': 'robots.txt'}
+TEMPLATE_PAGES = {os.path.join('extras', 'robots.txt'): 'robots.txt'}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -30,7 +31,10 @@ CUSTOM_MENUITEMS = (('Blog', 'index.html'),
 USE_CUSTOM_MENU = True
 
 # Plugins
-PLUGIN_PATHS = ['..\\third_party\\pelican-plugins',]
+# Assuming that pelican-plugins are workspace/third_party/plugins
+# where your blog is at workspace/blog
+PLUGIN_PATHS = os.path.join(os.path.split(os.getcwd())[0],
+                            'third_party', 'pelican-plugins')
 PLUGINS = ['sitemap']
 
 # The sitemap plugin

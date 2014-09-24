@@ -3,8 +3,6 @@ date: 2013-04-25 03:03
 slug: about-me
 author: vishwath mohan
 
-
-
 <img style="float: right; margin: 20px 20px" src="{filename}../images/me.jpg" height=200px />
 
 I'm a PhD candidate at the University of Texas at Dallas, working with
